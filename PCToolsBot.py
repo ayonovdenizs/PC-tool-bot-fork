@@ -149,7 +149,7 @@ else:
 	f = open('msg.pt', 'tw', encoding='utf-8')
 	f.close
 print(logo)
-bot.send_message(my_id, "ПК запущен", reply_markup = menu_keyboard)
+bot.send_message(my_id, "ПК подключился к сети!", reply_markup = menu_keyboard)
 
 
 @bot.message_handler(content_types=["text"])
@@ -214,12 +214,12 @@ def addons_process(message):
 
 		elif message.text == "⛔️Выключить компьютер":
 			bot.send_message(my_id, "Выключение компьютера...")
-			os.system('shutdown -s /t 0 /f')
+			os.system('shutdown /s /t 0')
 			bot.register_next_step_handler(message, addons_process)
 		
 		elif message.text == "♻️Перезагрузить компьютер":
 			bot.send_message(my_id, "Перезагрузка компьютера...")
-			os.system('shutdown -r /t 0 /f')
+			os.system('shutdown /r /t 0')
 			bot.register_next_step_handler(message, addons_process)
 
 		elif message.text == "🖥О компьютере":
