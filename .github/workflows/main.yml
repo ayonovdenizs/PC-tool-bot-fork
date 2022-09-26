@@ -27,6 +27,6 @@ jobs:
     - name: Upload exe to artifact
       run:
       - uses: actions/upload-artifact@v3
-          with:
-            name: PCToolsBot.exe
-            path: PCToolsBot.exe
+            with:
+              name: PCToolsBot.exe
+              path: PCToolsBot.exe
