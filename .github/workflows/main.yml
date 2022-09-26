@@ -33,7 +33,7 @@ jobs:
         mv dist/PCToolsBot.exe PCToolsBot.exe
     - name: Upload exe to artifact
       run:
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact
         with:
             name: PCToolsBot.exe
             path: PCToolsBot.exe
