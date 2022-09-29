@@ -18,7 +18,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: build
-      run: |
-        sh ./build.sh
-        
+      - uses: actions/checkout@v2
+      
+      - name: Download tools and build exe
+        run: |
+          sudo apt update
+          sudo apt install python3
+          sudo apt install pip3
+          chmod +x build.sh
+          bash build.sh
+      
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.1.0
+          with:
+          name: PCtools.exe
+          path: Build.py.PCToolsBot.exe
