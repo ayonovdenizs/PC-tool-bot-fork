@@ -31,4 +31,4 @@ jobs:
         uses: actions/upload-artifact@v3.1.0
         with:
           name: PCtools.exe
-          path: Build.py.PCToolsBot.exe
+          path: dist/PCToolsBot.exe
