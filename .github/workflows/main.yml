@@ -20,5 +20,5 @@ jobs:
     steps:
     - name: build
       run: |
-        sh build.sh
+        bash build.sh
         
