@@ -20,5 +20,5 @@ jobs:
     steps:
     - name: build
       run: |
-        bash build.sh
+        sudo sh build.sh
         
