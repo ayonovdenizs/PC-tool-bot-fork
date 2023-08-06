@@ -139,13 +139,11 @@ _Мой телеграм канал:_ @FRAMEDEV
 _Репозиторий GitHub:_ [КЛИК](https://github.com/kiraGGG/PCToolsBot)
 _Поддержать автора:_ [КЛИК](https://donationalerts.com/r/kiraggg)
 '''
-
-MessageBox = ctypes.windll.user32.MessageBoxW
+
 if os.path.exists("msg.pt"):
 	pass
 else:
-	bot.send_message(my_id, "Спасибо что выбрали данного Бота!\nСоветую сначала прочитать все в меню \"❗️Информация\"\n\n_Мой телеграм канал:_ @FRAMEDEV\n_Репозиторий GitHub:_ [КЛИК](https://github.com/kiraGGG/PCToolsBot)\n_Поддержать автора:_ [КЛИК](https://donationalerts.com/r/lgjegjp4ooke4e)", parse_mode = "markdown")
-	MessageBox(None, f'На вашем ПК запущена программа PC TOOL для управления компьютером\nДанное сообщения является разовым', '!ВНИМАНИЕ!', 0)
+	bot.send_message(my_id, "Спасибо что выбрали данного Бота!\nСоветую сначала прочитать все в меню \"❗️Информация\"\n\n_Мой телеграм канал:_ @FRAMEDEV\n_Репозиторий GitHub:_ [КЛИК](https://github.com/kiraGGG/PCToolsBot)\n_Поддержать автора:_ [КЛИК](https://donationalerts.com/r/lgjegjp4ooke4e)", parse_mode = "markdown")
 	f = open('msg.pt', 'tw', encoding='utf-8')
 	f.close
 print(logo)
